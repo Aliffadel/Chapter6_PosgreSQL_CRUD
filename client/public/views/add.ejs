@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partial/head') %>
+
+  <body>
+    <%- include('partial/navbar') %>
+    <div class="container-fluid">
+      <h1 class="text-center">Add New Entry</h1>
+      <div class="">
+        <form action="/add" method="POST">
+          <input
+            class="form-control w-100 mt-2"
+            type="text"
+            name="email"
+            placeholder="Masukkan Email"
+          />
+          <input
+            class="form-control w-100 mt-2"
+            type="text"
+            name="password"
+            placeholder="Masukkan Password"
+          />
+          <input
+            class="form-control w-100 mt-2"
+            type="text"
+            name="name"
+            placeholder="Masukkan Nama"
+          />
+          <input
+            class="form-control w-100 mt-2"
+            type="text"
+            name="hobby"
+            placeholder="Masukkan Hobby"
+          />
+          <input
+            class="form-control w-100 mt-2"
+            type="text"
+            name="age"
+            placeholder="Masukkan Umur"
+          />
+          <input
+            class="form-control w-100 mt-2"
+            type="text"
+            name="win"
+            placeholder="WIN"
+          />
+          <input
+            class="form-control w-100 mt-2"
+            type="text"
+            name="lose"
+            placeholder="LOSE"
+          />
+          <div class="text-center mt-2">
+            <button class="btn btn-primary btn-lg">Add</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
